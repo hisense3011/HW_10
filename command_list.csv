@@ -1,0 +1,24 @@
+    1  git config --global user.name "hisense3011"
+    2  git config --global user.email "ab9046326@gmail.com"
+    3  cd ~/Desktop/HW_10
+    4  touch text_ignore.txt
+    5  nano .gitignore
+    6  git status
+    7  git add .
+    8   git commit -m "changed .gitignore and created text_ignore.txt"
+    9  touch main_test.txt
+   10  git add .
+   11  git commit -m "created main_test.txt"
+   12  git checkout -b develop
+   13  git branch
+   14  touch develop_test.txt
+   15  git add .
+   16  git commit -m "created a new branch and created develop_test.txt"
+   17  nano develop_test.txt
+   18  git status
+   19  git add .
+   20  git commit -m "added a text in develop_test.txt"
+   21  git checkout main
+   22  git merge develop
+   23  git log
+   24  history > command_list.csv
